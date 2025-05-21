@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northern Voice Trust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2a3990",
+              secondary: "#ffc107",
+              accent: "#ffcdd2"
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .hero-pattern {
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232a3990' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250512-WA0024.jpg-rlIZxMS0GuE5wGbfjKQzzlm1Z7vbmj.jpeg" alt="Northern Voice Trust Logo" class="h-16" />
+            <span class="ml-2 text-primary font-bold text-xl md:text-2xl">Northern Voice Trust</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-primary hover:text-secondary transition duration-300">Home</a>
+            <a href="#about" class="text-primary hover:text-secondary transition duration-300">About</a>
+            <a href="#programs" class="text-primary hover:text-secondary transition duration-300">Programs</a>
+            <a href="#gallery" class="text-primary hover:text-secondary transition duration-300">Gallery</a>
+            <a href="#team" class="text-primary hover:text-secondary transition duration-300">Team</a>
+            <a href="#books" class="text-primary hover:text-secondary transition duration-300">Books</a>
+            <a href="#contact" class="text-primary hover:text-secondary transition duration-300">Contact</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-primary focus:outline-none">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+          <a href="#home" class="block py-2 text-primary hover:text-secondary">Home</a>
+          <a href="#about" class="block py-2 text-primary hover:text-secondary">About</a>
+          <a href="#programs" class="block py-2 text-primary hover:text-secondary">Programs</a>
+          <a href="#gallery" class="block py-2 text-primary hover:text-secondary">Gallery</a>
+          <a href="#team" class="block py-2 text-primary hover:text-secondary">Team</a>
+          <a href="#books" class="block py-2 text-primary hover:text-secondary">Books</a>
+          <a href="#contact" class="block py-2 text-primary hover:text-secondary">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-20 hero-pattern">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Empowering Through Literacy</h1>
+            <p class="text-lg text-gray-700 mb-8">Northern Voice Trust is a literary organization fostering reading, writing, and creative expression in Northern Kenya. Our aim is to close the literacy gap and unlock the imagination power of children.</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="#programs" class="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition duration-300 text-center">Our Programs</a>
+              <a href="#contact" class="bg-secondary text-primary px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition duration-300 text-center">Get Involved</a>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <img src="/images/children_reading.jpeg" alt="Children Reading" class="rounded-lg shadow-xl max-w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Story</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <img src="/images/children_with_books.jpeg" alt="Children with books" class="rounded-lg shadow-xl max-w-full h-auto" />
+          </div>
+          <div class="md:w-1/2 md:pl-10">
+            <p class="text-gray-700 mb-6">Northern Voice Trust is a literary organization registered as a trust in Kenya which began with a belief in the power of books. Our aim is to foster reading, writing, and creative expression in Northern Kenya. A commitment to education, learning and development in Africa.</p>
+            <p class="text-gray-700 mb-6">Our resolve is to close the literacy gap, and to unlock the imagination power of children through putting a book in a child's hand.</p>
+            <p class="text-gray-700 mb-6">
+              The founder, Sahara Abdi, an author and a reader herself grew up in a home surrounded by books, and knows first hand the infinite possibilities books open up in the life of a child. It is for this reason she founded Northern Voice Trust to change the narrative in her home, and use her knowledge as well as influence to inspire as many writers and readers from Northern Kenya, a region that is often misrepresented, and whose story is often told by others.
+            </p>
+            <div class="flex flex-col space-y-4">
+              <div class="flex items-start">
+                <div class="bg-secondary p-2 rounded-full mr-4">
+                  <i class="fas fa-book text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary text-lg">Mission</h3>
+                  <p class="text-gray-700">To empower children and communities of Northern Kenya through literary expressions, promoting literacy and education as fundamental tools for personal and societal development.</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-secondary p-2 rounded-full mr-4">
+                  <i class="fas fa-eye text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-primary text-lg">Vision</h3>
+                  <p class="text-gray-700">To build a future where every child in Northern Kenya has the knowledge, skills, and opportunities to thrive, unlocking the full potential of the society.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Programs</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">We run various programs aimed at promoting literacy and fostering a love for reading among children in Northern Kenya.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-48 bg-primary flex items-center justify-center">
+              <i class="fas fa-book-reader text-6xl text-secondary"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-3">Project I Read</h3>
+              <p class="text-gray-700">A one hour long read aloud program that we do with schools and encourage them to incorporate in their timetable to read with children from nursery to year 4. Reading aloud has many important foundational skills and not only does it boost their reading with building vocabulary but creates pleasure in reading.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-48 bg-primary flex items-center justify-center">
+              <i class="fas fa-home text-6xl text-secondary"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-3">Maktaba Vijijini</h3>
+              <p class="text-gray-700">Equipping tiny libraries in the villages. We not only get them the books but build the capacity for them to embrace reading culture inculcated into the community, so it becomes a community project.</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-48 bg-primary flex items-center justify-center">
+              <i class="fas fa-calendar-alt text-6xl text-secondary"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-3">NVT Book Fair</h3>
+              <p class="text-gray-700">We hosted the first ever book fair in the whole of Northern Kenya in Mandera in 2019 and 2020. Our plan is to establish annual book fairs in all the Northern Kenya counties.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Gallery</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">See the impact of our programs through these moments captured across Northern Kenya.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g1.jpeg" alt="Gallery 1" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g2.jpeg" alt="Gallery 2" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g3.jpeg" alt="Gallery 3" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g4.jpeg" alt="Gallery 4" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g5.jpeg" alt="Gallery 5" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g6.jpeg" alt="Gallery 6" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g7.jpeg" alt="Gallery 7" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-md">
+            <img src="/images/g8.jpeg" alt="Gallery 8" class="w-full h-64 object-cover transition-transform duration-500 hover:transform hover:scale-110" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Team</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">Meet the dedicated individuals behind Northern Voice Trust who are passionate about promoting literacy in Northern Kenya.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="p-6">
+              <img src="/images/founder.jpeg" alt="Sahara Abdi" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <h3 class="text-xl font-bold text-primary">Sahara Abdi</h3>
+              <p class="text-secondary font-medium mb-3">Founder</p>
+              <p class="text-gray-700 mb-4">An author and reader who grew up surrounded by books and knows firsthand the infinite possibilities books open up in the life of a child.</p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="p-6">
+              <img src="/images/t1.jpeg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <h3 class="text-xl font-bold text-primary">Team Member</h3>
+              <p class="text-secondary font-medium mb-3">Program Director</p>
+              <p class="text-gray-700 mb-4">Dedicated to implementing effective literacy programs that reach children across Northern Kenya.</p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="p-6">
+              <img src="/images/t2.jpeg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <h3 class="text-xl font-bold text-primary">Team Member</h3>
+              <p class="text-secondary font-medium mb-3">Community Outreach</p>
+              <p class="text-gray-700 mb-4">Works closely with schools and communities to ensure our programs reach those who need them most.</p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="p-6">
+              <img src="/images/t3.jpeg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <h3 class="text-xl font-bold text-primary">Team Member</h3>
+              <p class="text-secondary font-medium mb-3">Community Outreach</p>
+              <p class="text-gray-700 mb-4">Works closely with schools and communities to ensure our programs reach those who need them most.</p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="p-6">
+              <img src="/images/t4.jpeg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <h3 class="text-xl font-bold text-primary">Team Member</h3>
+              <p class="text-secondary font-medium mb-3">Community Outreach</p>
+              <p class="text-gray-700 mb-4">Works closely with schools and communities to ensure our programs reach those who need them most.</p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden text-center transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="p-6">
+              <img src="/images/t5.jpeg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <h3 class="text-xl font-bold text-primary">Team Member</h3>
+              <p class="text-secondary font-medium mb-3">Community Outreach</p>
+              <p class="text-gray-700 mb-4">Works closely with schools and communities to ensure our programs reach those who need them most.</p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary hover:text-secondary"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder's Message -->
+    <section class="py-20 bg-primary">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Word from the Founder</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/3 mb-8 md:mb-0">
+            <div class="rounded-full overflow-hidden border-4 border-secondary mx-auto" style="max-width: 300px">
+              <img src="/images/founder1.jpg" alt="Sahara Abdi - Founder" class="w-full h-auto" />
+            </div>
+          </div>
+          <div class="md:w-2/3 md:pl-10 text-white">
+            <div class="mb-6">
+              <i class="fas fa-quote-left text-4xl text-secondary opacity-50"></i>
+            </div>
+            <p class="text-lg mb-6">There's nothing quite like the power of a book to open up worlds, ignite imaginations, and shape futures. Yet, far too many children still don't have access to the books they need to grow, learn, and dream. That's why I've embarked on the journey of starting a literacy organization — one that is driven by the belief that every child deserves access to books and the opportunity to develop the skills that will unlock their potential.</p>
+            <p class="text-lg mb-6">This is a dream that's bigger than just reading words on a page. It's about creating an ecosystem where literacy is a bridge to equality, empowerment, and opportunity. It's about building a world where children, no matter where they come from or their circumstances, can pick up a book and discover the endless possibilities that lie within.</p>
+            <p class="text-lg mb-6">Join us in this movement. Together, let's dream of books for all children and turn that dream into a reality.</p>
+            <div class="mt-8">
+              <p class="font-bold text-xl">Sahara Abdi</p>
+              <p class="text-secondary">Founder, Northern Voice Trust</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">My Books</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">Explore books written by our founder. 70% of proceeds go to running the organization.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-64 overflow-hidden">
+              <img src="/images/araweelo.jpeg" alt="araweelo" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2">Araweelo</h3>
+              <p class="text-gray-700 mb-1">A story about a young girl from Northern Kenya who discovers her passion for storytelling.</p>
+              <div class="hidden flex justify-between items-center">
+                <span class="text-primary font-bold">$15.99</span>
+                <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition duration-300">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-64 overflow-hidden">
+              <img src="/images/colorful_brain.jpeg" alt="araweelo" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2">My Brother With The Colourful Brain</h3>
+              <p class="text-gray-700 mb-1">A story about a boy with a colorful brain.</p>
+              <div class="hidden flex justify-between items-center">
+                <span class="text-primary font-bold">$15.99</span>
+                <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition duration-300">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-64 overflow-hidden">
+              <img src="/images/boy_named_salah.jpeg" alt="boy_named_salah" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2">A Boy Named Salah</h3>
+              <p class="text-gray-700 mb-1">A story about a young boy named Salah.</p>
+              <div class="hidden flex justify-between items-center">
+                <span class="text-primary font-bold">$15.99</span>
+                <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition duration-300">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+            <div class="h-64 overflow-hidden">
+              <img src="/images/araweelo.jpeg" alt="araweelo" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-primary mb-2">Araweelo</h3>
+              <p class="text-gray-700 mb-1">A story about a young girl from Northern Kenya who discovers her passion for storytelling.</p>
+              <div class="hidden flex justify-between items-center">
+                <span class="text-primary font-bold">$15.99</span>
+                <a href="#" class="bg-secondary text-primary px-4 py-2 rounded-full font-medium hover:bg-opacity-90 transition duration-300">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Blog</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">Stories and insights from our journey to promote literacy in Northern Kenya.</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+            <p class="text-gray-700 mb-4">I was introduced to books before I was introduced to school. I would flip the pages of books and feel lost in them. The earliest memory of my literacy that I recall was trying to pronounce the word <em>firestone</em> usually engraved on tires and try to read out. This was before I was formally taken to school, probably at the age of 5. To be honest, this was a privilege for a child born in Mandera then, and growing up there.</p>
+            <p class="text-gray-700 mb-4">I used to be so much in love with reading that I would read anywhere, including walking by the road to and from school, under the scorching sun of Mandera, without a care to the damage the sun would do to my eyes, especially the reflection from the white pages against the sun. I was a curious child who even the sun wouldn't stop.</p>
+            <p class="text-gray-700 mb-4">Books were the first friends I made in life. I still never go anywhere without a book, and I always seek comfort in stories. Stories shape us, who we are as people. Stories connect us and bond us as humans.</p>
+            <p class="text-gray-700 mb-4">Reading to me has always been a passion, right from childhood. Books have impacted my life so much, and how I think about life. I read to see the world, and experience how others feel. Without a doubt, reading expands one's knowledge and world view.</p>
+            <div class="text-right">
+              <a href="#" class="text-primary hover:text-secondary font-medium">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Contact Us</h2>
+          <div class="w-20 h-1 bg-secondary mx-auto"></div>
+          <p class="text-gray-700 mt-4 max-w-2xl mx-auto">Get in touch with us to learn more about our programs or to get involved.</p>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <form class="bg-white p-8 rounded-lg shadow-md">
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+              </div>
+              <div class="mb-6">
+                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea id="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              </div>
+              <button type="submit" class="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition duration-300 w-full">Send Message</button>
+            </form>
+          </div>
+          <div class="md:w-1/2 md:pl-10">
+            <div class="bg-white p-8 rounded-lg shadow-md h-full">
+              <h3 class="text-xl font-bold text-primary mb-6">Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-secondary p-3 rounded-full mr-4">
+                    <i class="fas fa-envelope text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Email</h4>
+                    <p class="text-gray-700">info@nvt.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-secondary p-3 rounded-full mr-4">
+                    <i class="fas fa-phone text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Phone</h4>
+                    <p class="text-gray-700">+254792489981</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-secondary p-3 rounded-full mr-4">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800">Address</h4>
+                    <p class="text-gray-700">P.O Box 41483-00100</p>
+                    <p class="text-gray-700">Nairobi, Kenya</p>
+                  </div>
+                </div>
+                <div class="pt-6">
+                  <h4 class="font-semibold text-gray-800 mb-4">Follow Us</h4>
+                  <div class="flex space-x-4">
+                    <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-opacity-90 transition duration-300">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-opacity-90 transition duration-300">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-opacity-90 transition duration-300">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-primary text-white p-3 rounded-full hover:bg-opacity-90 transition duration-300">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0 flex items-center">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG-20250512-WA0024.jpg-rlIZxMS0GuE5wGbfjKQzzlm1Z7vbmj.jpeg" alt="Northern Voice Trust Logo" class="h-16 bg-white rounded-full p-2" />
+            <div class="ml-4">
+              <h3 class="text-xl font-bold">Northern Voice Trust</h3>
+              <p class="text-sm">Empowering through literacy</p>
+            </div>
+          </div>
+          <div class="text-center md:text-right">
+            <p>&copy; 2025 Northern Voice Trust. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed with <i class="fas fa-heart text-secondary"></i> for literacy in Northern Kenya</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-secondary text-primary p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Back to Top Button
+      const backToTopButton = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("opacity-0", "invisible");
+          backToTopButton.classList.add("opacity-100", "visible");
+        } else {
+          backToTopButton.classList.remove("opacity-100", "visible");
+          backToTopButton.classList.add("opacity-0", "invisible");
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+  </body>
+</html>
